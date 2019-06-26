@@ -1,0 +1,467 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>Blog Details</title>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="description" content="Popfolio project">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" type="text/css" href="styles/bootstrap-4.1.2/bootstrap.min.css">
+<link href="plugins/font-awesome-4.7.0/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+<link href="plugins/Morphext-2.4.4/morphext.css" rel="stylesheet" type="text/css">
+<link rel="stylesheet" type="text/css" href="plugins/OwlCarousel2-2.3.4/owl.carousel.css">
+<link rel="stylesheet" type="text/css" href="plugins/OwlCarousel2-2.3.4/owl.theme.default.css">
+<link rel="stylesheet" type="text/css" href="plugins/OwlCarousel2-2.3.4/animate.css">
+<link rel="stylesheet" type="text/css" href="plugins/magnific-popup/magnific-popup.css">
+<link rel="stylesheet" type="text/css" href="styles/blog_details.css">
+<link rel="stylesheet" type="text/css" href="styles/blog_details_responsive.css">
+</head>
+<body>
+
+<div class="super_container">
+
+	<!-- Sidebar -->
+
+	<div class="sidebar d-flex flex-column align-items-center justify-content-start">
+
+		<!-- Hamburger -->
+		<div class="hamburger_container text-center">
+			<div class="hamburger">
+				<div>
+					<div></div>
+					<div></div>
+					<div></div>
+					<div></div>
+					<div></div>
+					<div></div>
+					<div></div>
+					<div></div>
+					<div></div>
+				</div>
+			</div>
+			<div class="menu_text">menu</div>
+		</div>
+
+		<!-- Logo -->
+		<div class="logo home_logo">
+			<a href="#">
+				<svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+					 viewBox="0 0 103 103" style="enable-background:new 0 0 103 103;" xml:space="preserve">
+					<style type="text/css">
+						.st0{fill-rule:evenodd;clip-rule:evenodd;fill:#01bbd2;}
+					</style>
+					<g>
+						<path class="st0" d="M4.1,0.64h4h50.53c21.97,0,39.95,17.98,39.95,39.95v0.38c0,21.97-17.98,39.95-39.95,39.95H32.07v22.05h-4
+							V80.93h-4v22.05h-3.99V80.93h-4v22.05h-3.99V80.93H8.09v22.05h-4V80.93v-1.67v-2.33h54.53c19.77,0,35.96-16.19,35.96-35.96V40.6
+							c0-19.77-16.19-35.96-35.96-35.96H8.09v48.33h3.99V12.63v-4h3.99h42.54c17.56,0,31.96,14.4,31.96,31.96v0.38
+							c0,17.56-14.4,31.96-31.96,31.96H4.1v-4h54.53c15.36,0,27.97-12.61,27.97-27.97V40.6c0-15.36-12.61-27.97-27.97-27.97H16.08v40.34
+							h4V20.62v-4h3.99h34.55c13.15,0,23.97,10.82,23.97,23.97v0.38c0,13.15-10.82,23.97-23.97,23.97H4.1v-3.99h54.53
+							c10.95,0,19.98-9.03,19.98-19.98V40.6c0-10.95-9.03-19.98-19.98-19.98H24.07v32.34h4V28.61v-3.99h4h26.56
+							c8.74,0,15.98,7.24,15.98,15.98v0.38c0,8.74-7.24,15.98-15.98,15.98H4.1v-3.01v-0.98V4.64V0.64L4.1,0.64z M32.07,28.61v24.35h26.56
+							c6.54,0,11.99-5.45,11.99-11.99V40.6c0-6.54-5.45-11.99-11.99-11.99H32.07z"/>
+					</g>
+				</svg>
+			</a>
+		</div>
+
+		<!-- Share -->
+		<div class="sidebar_share mt-auto">
+			<div class="sidebar_share_content">
+				<ul>
+					<li><a href="#">Fb</a></li>
+					<li><a href="#">Tw</a></li>
+					<li><a href="#">Be</a></li>
+				</ul>
+			</div>
+			<div class="sidebar_share_button">
+				<div>
+					<svg version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+						 viewBox="0 0 59 59" style="enable-background:new 0 0 59 59;" xml:space="preserve">
+						<path class="share_path" d="M47,39c-2.671,0-5.182,1.04-7.071,2.929c-0.524,0.524-0.975,1.1-1.365,1.709l-17.28-10.489
+							C21.741,32.005,22,30.761,22,29.456c0-1.305-0.259-2.549-0.715-3.693l17.284-10.409C40.345,18.142,43.456,20,47,20
+							c5.514,0,10-4.486,10-10S52.514,0,47,0S37,4.486,37,10c0,1.256,0.243,2.454,0.667,3.562L20.361,23.985
+							c-1.788-2.724-4.866-4.529-8.361-4.529c-5.514,0-10,4.486-10,10s4.486,10,10,10c3.495,0,6.572-1.805,8.36-4.529L37.664,45.43
+							C37.234,46.556,37,47.759,37,49c0,2.671,1.04,5.183,2.929,7.071C41.818,57.96,44.329,59,47,59s5.182-1.04,7.071-2.929
+							C55.96,54.183,57,51.671,57,49s-1.04-5.183-2.929-7.071C52.182,40.04,49.671,39,47,39z"/>
+					</svg>
+				</div>
+			</div>
+		</div>
+
+	</div>
+
+	<!-- Header -->
+
+	<header class="header" id="header">
+		<div class="header_container d-flex flex-row align-items-center justify-content-start">
+			
+			<!-- Logo -->
+			<div class="logo header_logo">
+				<a href="#">
+					<svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+						 viewBox="0 0 103 103" style="enable-background:new 0 0 103 103;" xml:space="preserve">
+						<style type="text/css">
+							.st0{fill-rule:evenodd;clip-rule:evenodd;fill:#01bbd2;}
+						</style>
+						<g>
+							<path class="st0" d="M4.1,0.64h4h50.53c21.97,0,39.95,17.98,39.95,39.95v0.38c0,21.97-17.98,39.95-39.95,39.95H32.07v22.05h-4
+								V80.93h-4v22.05h-3.99V80.93h-4v22.05h-3.99V80.93H8.09v22.05h-4V80.93v-1.67v-2.33h54.53c19.77,0,35.96-16.19,35.96-35.96V40.6
+								c0-19.77-16.19-35.96-35.96-35.96H8.09v48.33h3.99V12.63v-4h3.99h42.54c17.56,0,31.96,14.4,31.96,31.96v0.38
+								c0,17.56-14.4,31.96-31.96,31.96H4.1v-4h54.53c15.36,0,27.97-12.61,27.97-27.97V40.6c0-15.36-12.61-27.97-27.97-27.97H16.08v40.34
+								h4V20.62v-4h3.99h34.55c13.15,0,23.97,10.82,23.97,23.97v0.38c0,13.15-10.82,23.97-23.97,23.97H4.1v-3.99h54.53
+								c10.95,0,19.98-9.03,19.98-19.98V40.6c0-10.95-9.03-19.98-19.98-19.98H24.07v32.34h4V28.61v-3.99h4h26.56
+								c8.74,0,15.98,7.24,15.98,15.98v0.38c0,8.74-7.24,15.98-15.98,15.98H4.1v-3.01v-0.98V4.64V0.64L4.1,0.64z M32.07,28.61v24.35h26.56
+								c6.54,0,11.99-5.45,11.99-11.99V40.6c0-6.54-5.45-11.99-11.99-11.99H32.07z"/>
+						</g>
+					</svg>
+				</a>
+			</div>
+
+			<nav class="main_nav ml-auto">
+				<ul class="d-flex flex-row align-items-start justify-content-start">
+					<li><a href="index.html">Home</a></li>
+					<li><a href="about.html">About</a></li>
+					<li><a href="work.html">Work</a></li>
+					<li><a href="blog.html">Blog</a></li>
+					<li><a href="#" class="contact_activator">Contact</a></li>
+				</ul>
+			</nav>
+
+			<div class="hamburger ml-auto">
+				<div>
+					<div></div>
+					<div></div>
+					<div></div>
+					<div></div>
+					<div></div>
+					<div></div>
+					<div></div>
+					<div></div>
+					<div></div>
+				</div>
+			</div>
+
+		</div>
+	</header>
+
+	<!-- Menu -->
+
+	<div class="menu">
+		<div class="d-flex flex-column align-items-start justify-content-start">
+			<div class="menu_close"><div></div></div>
+			<nav class="menu_nav">
+				<ul>
+					<li><a href="index.html">home</a></li>
+					<li><a href="about.html">about</a></li>
+					<li><a href="work.html">work</a></li>
+					<li><a href="blog.html">Blog</a></li>
+					<li><a href="#" class="contact_activator">Contact</a></li>
+				</ul>
+			</nav>
+			<div class="menu_content mt-auto">
+				<div class="menu_about">
+					<strong>About</strong>
+					<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+					<a class="resume_link" href="#">Download my resume</a>
+				</div>
+				<div class="menu_social">
+					<ul class="d-flex flex-row">
+						<li><a href="#">Fb</a></li>
+						<li><a href="#">Tw</a></li>
+						<li><a href="#">Be</a></li>
+					</ul>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<!-- Contact -->
+
+	<div class="contact">
+		<div class="d-flex flex-column align-items-center justify-content-center">
+			<div class="contact_inner d-flex flex-row align-items-start justify-content-start flex-wrap">
+				<div class="contact_about">
+					<div>
+						<div class="contact_title"><h2>About me.</h2></div>
+						<div class="contact_subtitle">Web Designer & Front-end Developer</div>
+						<div class="contact_text">
+							<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Quis ipsum suspendisse ultrices gravida. Risus commodo viverra maecenas accumsan lacus vel facilisis. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+						</div>
+						<div class="contact_social">
+							<ul class="d-flex flex-row">
+								<li><a href="#">Fb</a></li>
+								<li><a href="#">Tw</a></li>
+								<li><a href="#">Be</a></li>
+							</ul>
+						</div>
+					</div>
+				</div>
+				<div class="contact_form_content">
+					<div>
+						<div class="contact_close"><div></div></div>
+						<div class="contact_title"><h2>Have any questions?</h2></div>
+						<div class="contact_form_container">
+							<form action="#" id="contact_form" class="contact_form">
+								<input type="text" class="contact_input" placeholder="Your name" required="required">
+								<input type="email" class="contact_input" placeholder="Your email" required="required">
+								<textarea class="contact_input contact_textarea" placeholder="Message" required="required"></textarea>
+								<button class="contact_button">submit</button>
+							</form>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	
+	<!-- Home -->
+
+	<div class="home">
+		<div class="parallax_background parallax-window" data-parallax="scroll" data-image-src="images/about_b.jpg" data-speed="0.8"></div>
+		<div class="container container_custom_1500">
+			<div class="row">
+				<div class="col">
+					<div class="home_container d-flex flex-column align-items-center justify-content-end">
+						<div class="home_title_container text-center">
+							<div class="home_title"><h1>Latest News</h1></div>
+							<div class="breadcrumbs">
+								<ul class="d-flex flex-row align-items-start justify-content-center">
+									<li><a href="index.html">Home</a></li>
+									<li>Blog</li>
+								</ul>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>	
+	</div>
+
+	<!-- Blog Details -->
+
+	<div class="blog_details">
+		<div class="container">
+			<div class="row">
+				
+				<!-- Side Content -->
+				<div class="col-xl-2 order-xl-1 order-2">
+					<div class="side_content sticky" id="sticky">
+						<div class="author_pic"><img src="images/blog_author.jpg" alt="https://www.pexels.com/@renatoabati"></div>
+						<ul>
+							<li>By <a href="#">Popfolio</a></li>
+							<li><a href="#">Apr 25, 2019</a></li>
+							<li>10 min read</li>
+						</ul>
+						<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore.</p>
+					</div>
+				</div>
+
+				<!-- Blog Post -->
+				<div class="col-xl-8 order-xl-2 order-1">
+					<div class="blog_post_details">
+						<div class="blog_post_details_title"><h1>Deciding on Geoengineering Will Be Harder Than Doing It</h1></div>
+						<p class="blog_post_highlight blog_post_highlight_1">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+						<div class="blog_post_image"><img src="images/blog_details.jpg" alt="https://unsplash.com/@jtylernix"></div>
+						<p class="p_1">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. <a href="#">Quis ipsum suspendisse ultrices gravida</a>. Risus commodo viverra maecenas accumsan lacus vel facilisis. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Quis ipsum suspendisse ultrices gravida. Risus commodo viverra maecenas accumsan lacus vel facilisis.</p>
+						<div class="blog_post_quote">
+							<p>“Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Quis ipsum suspendisse ultrices gravida. Risus commodo viverra.”</p>
+						</div>
+						<p class="p_2">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Quis ipsum suspendisse ultrices gravida. Risus commodo viverra maecenas accumsan lacus vel facilisis. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+						<h3>Quis ipsum suspendisse ultrices gravida</h3>
+						<p class="p_3">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Quis ipsum suspendisse ultrices gravida. Risus commodo viverra maecenas accumsan lacus vel facilisis. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Quis ipsum suspendisse ultrices gravida. Risus commodo viverra maecenas accumsan lacus vel facilisis.</p>
+						<div class="blog_post_tags">
+							<ul class="d-flex flex-row align-items-start justify-content-start flex-wrap">
+								<li><a href="#">Design</a></li>
+								<li><a href="#">Tech</a></li>
+								<li><a href="#">Lifestyle</a></li>
+								<li><a href="#">Photography</a></li>
+							</ul>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<!-- Related Articles -->
+
+	<div class="related">
+		<div class="container container_custom_1500">
+			<div class="row">
+				<div class="col">
+					<div class="related_title text-center"><h3>Related Articles</h3></div>
+				</div>
+			</div>
+			<div class="row related_row">
+				
+				<!-- Blog Post -->
+				<div class="col-xl-4 col-md-6 blog_col">
+					<div class="blog_post blog_post_noimage blog_post_noimage_normal design">
+						<a href="blog_details.html">
+							<span class="blog_post_container d-flex flex-column align-items-start justify-content-center">
+								<span class="blog_post_content">
+									<span class="blog_post_category">design</span>
+									<span class="blog_post_title">Limitless Myths About Web Design</span>
+									<span class="blog_post_link">Read more</span>
+								</span>
+							</span>
+						</a>
+					</div>
+				</div>
+
+				<!-- Blog Post -->
+				<div class="col-xl-4 col-md-6 blog_col">
+					<div class="blog_post blog_post_noimage blog_post_noimage_normal technology">
+						<a href="blog_details.html">
+							<span class="blog_post_container d-flex flex-column align-items-start justify-content-center">
+								<span class="blog_post_content">
+									<span class="blog_post_category">design</span>
+									<span class="blog_post_title">Limitless Myths About Web Design</span>
+									<span class="blog_post_link">Read more</span>
+								</span>
+							</span>
+						</a>
+					</div>
+				</div>
+
+				<!-- Blog Post -->
+				<div class="col-xl-4 col-md-6 blog_col">
+					<div class="blog_post blog_post_noimage blog_post_noimage_normal lifestyle">
+						<a href="blog_details.html">
+							<span class="blog_post_container d-flex flex-column align-items-start justify-content-center">
+								<span class="blog_post_content">
+									<span class="blog_post_category">design</span>
+									<span class="blog_post_title">Limitless Myths About Web Design</span>
+									<span class="blog_post_link">Read more</span>
+								</span>
+							</span>
+						</a>
+					</div>
+				</div>
+
+			</div>
+
+			<div class="row blog_row_noimage_large">
+				
+				<!-- Blog Post -->
+				<div class="col-lg-6 blog_col">
+					<div class="blog_post blog_post_noimage blog_post_noimage_large design">
+						<a href="blog_details.html">
+							<span class="blog_post_container d-flex flex-column align-items-start justify-content-center">
+								<span class="blog_post_content">
+									<span class="blog_post_category">design</span>
+									<span class="blog_post_title">Deciding on Geoengineering Will Be Harder Than Doing It</span>
+									<span class="blog_post_link">Read more</span>
+								</span>
+							</span>
+						</a>
+					</div>
+				</div>
+
+				<!-- Blog Post -->
+				<div class="col-lg-6 blog_col">
+					<div class="blog_post blog_post_noimage blog_post_noimage_large design">
+						<a href="blog_details.html">
+							<span class="blog_post_container d-flex flex-column align-items-start justify-content-center">
+								<span class="blog_post_content">
+									<span class="blog_post_category">design</span>
+									<span class="blog_post_title">Deciding on Geoengineering Will Be Harder Than Doing It</span>
+									<span class="blog_post_link">Read more</span>
+								</span>
+							</span>
+						</a>
+					</div>
+				</div>
+
+			</div>
+		</div>
+	</div>
+
+	<!-- Social -->
+
+	<div class="social">
+		<div class="container container_custom_1500">
+			<div class="row">
+				<div class="col-sm-4">
+					<div class="social_item">
+						<a href="#">
+							<span class="social_item_content d-flex flex-column align-items-start justify-content-between">
+								<span class="social_item_title">facebook</span>
+								<span class="social_item_icon"><i class="fa fa-facebook" aria-hidden="true"></i></span>
+							</span>
+						</a>	
+					</div>
+				</div>
+				<div class="col-sm-4">
+					<div class="social_item">
+						<a href="#">
+							<span class="social_item_content d-flex flex-column align-items-start justify-content-between">
+								<span class="social_item_title">twitter</span>
+								<span class="social_item_icon"><i class="fa fa-twitter" aria-hidden="true"></i></span>
+							</span>
+						</a>	
+					</div>
+				</div>
+				<div class="col-sm-4">
+					<div class="social_item">
+						<a href="#">
+							<span class="social_item_content d-flex flex-column align-items-start justify-content-between">
+								<span class="social_item_title">behance</span>
+								<span class="social_item_icon"><i class="fa fa-behance" aria-hidden="true"></i></span>
+							</span>
+						</a>	
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<!-- Footer -->
+
+	<footer class="footer">
+		<div class="container container_custom_1500">
+			<div class="row">
+				<div class="col">
+					<div class="footer_container d-flex flex-lg-row flex-column align-items-center justify-content-between">
+						<div class="copyright order-lg-1 order-last">© 2019 Popfolio</div>
+						<div class="footer_info">
+							<div>General Inquaries</div>
+							<div>popfolio@mail.com</div>
+						</div>
+						<div class="footer_info">
+							<div>Laplacestraat 53</div>
+							<div>Amsterdam, Netherlands</div>
+						</div>
+						<div class="footer_nav order-lg-last order-first">
+							<ul class="d-flex flex-row align-items-start justify-content-start">
+								<li><a href="index.html">Home</a></li>
+								<li><a href="about.html">About</a></li>
+								<li><a href="work.html">Work</a></li>
+								<li><a href="blog.html">Blog</a></li>
+								<li><a href="#" class="contact_activator">Contact</a></li>
+							</ul>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>		
+	</footer>
+</div>
+
+<script src="js/jquery-3.3.1.min.js"></script>
+<script src="styles/bootstrap-4.1.2/popper.js"></script>
+<script src="styles/bootstrap-4.1.2/bootstrap.min.js"></script>
+<script src="plugins/greensock/TweenMax.min.js"></script>
+<script src="plugins/greensock/TimelineMax.min.js"></script>
+<script src="plugins/scrollmagic/ScrollMagic.min.js"></script>
+<script src="plugins/greensock/animation.gsap.min.js"></script>
+<script src="plugins/greensock/ScrollToPlugin.min.js"></script>
+<script src="plugins/OwlCarousel2-2.3.4/owl.carousel.js"></script>
+<script src="plugins/easing/easing.js"></script>
+<script src="plugins/Morphext-2.4.4/morphext.js"></script>
+<script src="plugins/progressbar/progressbar.min.js"></script>
+<script src="plugins/parallax-js-master/parallax.min.js"></script>
+<script src="plugins/magnific-popup/jquery.magnific-popup.min.js"></script>
+<script src="js/blog_details.js"></script>
+</body>
+</html>
